@@ -1,0 +1,117 @@
+---
+title: "GHC Demo Assignment"
+subtitle: "CSC 110 - Fall 2025"
+author: Abbie Vaughn
+date: "2025-10-11"
+toc: true
+toc-depth: 1
+toc-location: right-body
+format: 
+  html: default
+  pdf: default
+format-links: false
+theme: 
+  light: sandstone
+  dark: solar
+---
+
+```{r}
+#| include: false
+
+library(tidyverse)
+```
+
+# Homework
+
+```{r}
+#| label: fig-charts
+#| fig-cap: "Fuel Mileage Scatterplot"
+
+mpg |> 
+  ggplot(
+    aes(
+      x = displ,
+      y = hwy
+    )
+  ) +
+  geom_point() +
+  labs(
+    title = "The Impact of Vehicle Engine Size on Highway Fuel Mileage",
+    x = "Displacement (Vehicle Engine Size)",
+    y = "Highway Fuel Mileage"
+  )
+```
+
+
+
+<https://davidson.edu>
+
+* Fall 2025 Classes
+    + Bilingualism & Literacy
+        - Learning how to teach kids to read
+        - Tutoring a first grader
+    + Data Science & Society
+        - Data visualization & analysis
+        - Coding in RStudio & Quarto
+    + Directing I
+        - Learning how to direct for theatre
+        - Acting in and directing mini projects
+    + Spanish 260
+        - About Latin American rights & justice
+        - Speaking, listening, reading, and writing
+        
+        
+1.  Gilmore Girls
+2.  Ted Lasso
+3.  Shrinking
+
+
+All of high school, I participated in theatre performances, and my junior year our fall play was unique because we did theatre-in-the-round[^1]. We did Sense and Sensibility, so it fit within the context of the show. Everyone in this time period was constantly concerned about the public eye; there was no hiding.
+
+[^1]: Theatre-in-the-round means that the seating for the audience is all four sides of the stage, surrounding the actors.
+
+
+$$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+
+
+```{mermaid}
+flowchart LR
+  A{Choosing Clothes for Day} --> B[Weather]
+  B --> C[Cold Temperatures]
+  B --> D[Warm Temperatures]
+  C --> E(Sweater)
+  C --> F(Flannel)
+  D --> G(Dress)
+  D --> H(Tank Top)
+```
+
+
+> Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.
+
+
+:::{.callout-note}
+Remember to have some fun!
+:::
+
+:::{.callout-tip}
+## Sunscreen Tip
+
+Use a facial moisturizer that has a little bit of spf already in it every morning.
+:::
+
+:::{.callout-important collapse="true"}
+Make sure to complete your homework on time
+:::
+
+
+{{< pagebreak >}}
+
+
+# Reflection
+
+For my first chosen technique, I think an **ordered or unordered list** will be really useful for our final research project. Specifically when we are explaining the steps of our `exploratory data analysis` process (or even more broadly, our entire research process), it's possible that Addy and I could benefit from using lists to help our audience and readers understand how we obtained our graphs/charts and how our results led us to certain conclusions. Even further, the ordered and unordered lists could even be helpful for ourselves to understand what code we used and why to create a graph. These lists will be highly important to provide clarity to our readers for our end result. Also, **our research should be able to be recreated**, so another person should have clear, followable instructions.
+
+The second trick that I could imagine Addy and I using in our final project is the **footnote** technique. We are exploring the demographics of supreme court justices over time in the U.S. alongside their political ideologies in comparison to the ideologies of citizens in the U.S.. Because this topic can be confusing and dense, it's possible that we will use unfamiliar words or mention a concept or idea that needs clarifying. A footnote might help to **clear up the confusion** without interrupting the flow of the main text. Additionally, we can use footnotes to **sight any sources** we use to look at other research done on our topic, to understand our data sets, or to give credit to the companies and institutions that have collected our data. Overall, using footnotes in the final product of our research will be helpful to clear up clutter (commentary, word definitions, and citations) within the main body of the text. 
+
+Finally, my favorite trick that I learned through this demo assignment was how to make the **callout blocks**. I think it's really cool that you can insert a block of text with a tip, warning, note, etc. within the main part of the lab. These callout blocks can have many purposes depending on the section of the research. They can be used to **highlight important information**, or in other words, callout blocks can explicitly state what the reader should takeaway from the research. Sometimes understanding research can be difficult for readers, so callout blocks would be useful for the results or conclusion section of our research essay. Further, callout blocks can be used to **organize information**, to **break up long texts** in order to increase readability, to **hide distracting details**, and to clarify concepts and steps. Addy and I have the potential of needing to provide clarification or an explanation of something in our research process because there are multiple components to it, and it can be confusing. 
+
